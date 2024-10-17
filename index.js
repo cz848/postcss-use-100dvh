@@ -1,5 +1,5 @@
 const process = (decl, { AtRule, Rule }) => {
-  if (decl.value !== "100vh") {
+  if (!decl.value.includes("100vh")) {
     return;
   }
 
@@ -22,7 +22,7 @@ const process = (decl, { AtRule, Rule }) => {
 
   clonedRule.append({
     prop: decl.prop,
-    value: "100dvh",
+    value: decl.value.replace("100vh", "100dvh"),
     source: decl.source,
   });
 };
