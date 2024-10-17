@@ -1,6 +1,6 @@
 {
   "name": "postcss-use-100dvh",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PostCSS plugin to replace 100vh with 100dvh",
   "keywords": [
     "postcss",
